@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubisoft</title>
+    <link rel="icon" href="project image/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="hu.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <center>
+                <h1>Ubisoft</h1>
+            </center>
+            <div class="menu-icon" onclick="toggleMenu()">&#8942;</div> 
+        </nav>
+    </div>
+
+    <!-- Menu options (hidden by default) -->
+    <div class="menu-options" id="menuOptions">
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('hire')">Hire Us</a></li>
+        </ul>
+    </div>
+
+    <div id="homePage" class="page active">
+        <h2>Welcome to Ubisoft's New Game Releases</h2>
+        <p>Here are some of the latest games released by Ubisoft:</p>
+
+        <!-- Games Grid -->
+        <div class="games-grid">
+            <!-- Game 1 -->
+            <div class="game-card">
+                <img src="project image/ac mirage.avif" alt="Assassin's Creed Mirage">
+                <h3>Assassin's Creed Mirage</h3>
+                <p>An action-adventure game that takes you to Baghdad in the 9th century.</p>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-card">
+                <img src="project image/Far cry 6.jpg" alt="Far Cry 6">
+                <h3>Far Cry 6</h3>
+                <p>Step into a revolutionary open world filled with intense combat and exploration.</p>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-card">
+                <img src="project image/images.jpg" alt="Just Dance 2024">
+                <h3>Just Dance 2024</h3>
+                <p>Get ready to dance to the latest hits and show off your moves!</p>
+            </div>
+
+            <div class="game-card">
+                <img src="project image/rain.jpg" alt="Rainbow Six Siege">
+                <h3>Rainbow Six Siege</h3>
+                <p>A tactical shooter game where teamwork is key to success.</p>
+            </div>
+            
+            <div class="game-card">
+                <img src="project image/wdl.jpg" alt="Watch Dogs Legion">
+                <h3>Watch Dogs: Legion</h3>
+                <p>Build a resistance in a dystopian London and fight back!</p>
+            </div>
+
+            <div class="game-card">
+                <img src="project image/ghost.jpg" alt="Ghost Recon Breakpoint">
+                <h3>Ghost Recon Breakpoint</h3>
+                <p>A military shooter set in a diverse and mysterious open world.</p>
+            </div>
+
+            <div class="game-card">
+                <img src="project image/immortal.jpg" alt="Immortals Fenyx Rising">
+                <h3>Immortals Fenyx Rising</h3>
+                <p>An epic adventure set in a vibrant world inspired by Greek mythology.</p>
+            </div>
+
+            <div class="game-card">
+                <img src="project image/goood.jpg" alt="Beyond Good & Evil 2">
+                <h3>Beyond Good & Evil 2</h3>
+                <p>A long-awaited sequel that takes players on an epic space adventure.</p>
+            </div>
+
+            <div class="game-card">
+                <img src="project image/sand bone.jpg" alt="Skull & Bones">
+                <h3>Skull & Bones</h3>
+                <p>Embark on a pirate adventure in the dangerous seas of the Indian Ocean.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutPage" class="page">
+        <h2>About Ubisoft</h2>
+        <p>Ubisoft is a leading creator, publisher, and distributor of interactive entertainment and services. Founded in 1986, Ubisoft has grown to become one of the most innovative companies in the gaming industry, known for delivering unforgettable gaming experiences to players around the world.</p>
+    
+        <h3>Our Mission</h3>
+        <p>At Ubisoft, we strive to enrich players' lives with original and memorable gaming experiences. We believe in the power of play to bring people together, inspire creativity, and spark joy across the globe.</p>
+    
+        <h3>Our Journey</h3>
+        <ul>
+            <li><strong>1986:</strong> Ubisoft was founded by the Guillemot brothers in France.</li>
+            <li><strong>1989:</strong> First game developed and released: "Zombi" for the Amstrad CPC.</li>
+            <li><strong>1995:</strong> Creation of the iconic "Rayman" franchise.</li>
+            <li><strong>2007:</strong> Launch of the "Assassin's Creed" franchise, one of the most popular series in gaming history.</li>
+            <li><strong>2015:</strong> Ubisoft pioneers open-world multiplayer games with "The Division" and "Rainbow Six Siege."</li>
+            <li><strong>2023:</strong> Focuses on expanding into new platforms, including cloud gaming and VR.</li>
+        </ul>
+    
+        <h3>Our Values</h3>
+        <p>Ubisoft is built on the pillars of creativity, collaboration, and innovation. We aim to empower our teams to take bold steps, challenge the status quo, and continue delivering high-quality experiences to gamers everywhere.</p>
+    
+        <h3>Key Franchises</h3>
+        <div class="franchises-grid">
+            <div class="franchise-card">
+                <h4>Assassin's Creed</h4>
+                <p>An epic series of historical action-adventure games set in different eras.</p>
+            </div>
+            <div class="franchise-card">
+                <h4>Far Cry</h4>
+                <p>A series of open-world first-person shooter games known for their immersive worlds.</p>
+            </div>
+            <div class="franchise-card">
+                <h4>Tom Clancy's Rainbow Six</h4>
+                <p>A tactical shooter franchise focused on team-based multiplayer gameplay.</p>
+            </div>
+            <div class="franchise-card">
+                <h4>Watch Dogs</h4>
+                <p>An action-adventure series exploring themes of hacking and surveillance.</p>
+            </div>
+        </div>
+    
+        <h2>Hire Us</h2>
+        <p>Interested in working with us? Fill out the form below and upload your resume.</p>
+
+        <form id="hireForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmationMessage" style="display: none;">Your application has been submitted successfully!</p>
+    </div>
+
+    <script src="hu.js"></script>
+
+</body>
+</html>
